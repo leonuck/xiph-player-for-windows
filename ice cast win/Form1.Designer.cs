@@ -6,6 +6,7 @@
         private CustomScrollableListBox listBoxRadios;
         private CustomScrollableListBox listBoxFavorites;
         private System.Windows.Forms.Button buttonPlay;
+        private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonAddToFavorites;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
@@ -24,6 +25,7 @@
             this.listBoxRadios = new CustomScrollableListBox();
             this.listBoxFavorites = new CustomScrollableListBox();
             this.buttonPlay = new System.Windows.Forms.Button();
+            this.buttonStop = new System.Windows.Forms.Button(); // Botão Stop
             this.buttonAddToFavorites = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
@@ -52,6 +54,16 @@
             this.buttonPlay.Text = "Play";
             this.buttonPlay.UseVisualStyleBackColor = true;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
+            // 
+            // buttonStop
+            // 
+            this.buttonStop.Location = new System.Drawing.Point(93, 246);
+            this.buttonStop.Name = "buttonStop";
+            this.buttonStop.Size = new System.Drawing.Size(75, 23);
+            this.buttonStop.TabIndex = 6;
+            this.buttonStop.Text = "Stop";
+            this.buttonStop.UseVisualStyleBackColor = true;
+            this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
             // buttonAddToFavorites
             // 
@@ -88,6 +100,7 @@
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonAddToFavorites);
+            this.Controls.Add(this.buttonStop); // Adiciona o botão Stop
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.listBoxFavorites);
             this.Controls.Add(this.listBoxRadios);

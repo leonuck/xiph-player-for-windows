@@ -115,6 +115,18 @@ namespace ice_cast_win
             }
         }
 
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            if (outputDevice != null)
+            {
+                outputDevice.Stop();
+                outputDevice.Dispose();
+                mediaReader?.Dispose();
+                outputDevice = null;
+                mediaReader = null;
+            }
+        }
+
         private void buttonAddToFavorites_Click(object sender, EventArgs e)
         {
             if (listBoxRadios.SelectedItem != null)
