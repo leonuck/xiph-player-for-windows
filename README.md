@@ -1,4 +1,4 @@
-![Alt text](https://github.com/leonuck/xiph-player-for-windows/blob/master/xiph-player.png)
+![Alt text](https://github.com/leonuck/xiph-player-for-windows/blob/master/tela2.png)
 
 ENGLISH:
 Online Radio Player for xiph.org with automatic station loading via http://dir.xiph.org/yp.xml.
