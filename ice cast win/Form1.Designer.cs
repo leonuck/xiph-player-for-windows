@@ -8,6 +8,7 @@
         private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonAddToFavorites;
+        private System.Windows.Forms.Button buttonRemoveFromFavorites;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
 
@@ -25,8 +26,9 @@
             this.listBoxRadios = new CustomScrollableListBox();
             this.listBoxFavorites = new CustomScrollableListBox();
             this.buttonPlay = new System.Windows.Forms.Button();
-            this.buttonStop = new System.Windows.Forms.Button(); // Botão Stop
+            this.buttonStop = new System.Windows.Forms.Button();
             this.buttonAddToFavorites = new System.Windows.Forms.Button();
+            this.buttonRemoveFromFavorites = new System.Windows.Forms.Button(); // Novo botão
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -75,6 +77,16 @@
             this.buttonAddToFavorites.UseVisualStyleBackColor = true;
             this.buttonAddToFavorites.Click += new System.EventHandler(this.buttonAddToFavorites_Click);
             // 
+            // buttonRemoveFromFavorites
+            // 
+            this.buttonRemoveFromFavorites.Location = new System.Drawing.Point(416, 246);
+            this.buttonRemoveFromFavorites.Name = "buttonRemoveFromFavorites";
+            this.buttonRemoveFromFavorites.Size = new System.Drawing.Size(120, 23);
+            this.buttonRemoveFromFavorites.TabIndex = 7;
+            this.buttonRemoveFromFavorites.Text = "Remove from Favorites";
+            this.buttonRemoveFromFavorites.UseVisualStyleBackColor = true;
+            this.buttonRemoveFromFavorites.Click += new System.EventHandler(this.buttonRemoveFromFavorites_Click);
+            // 
             // textBoxSearch
             // 
             this.textBoxSearch.Location = new System.Drawing.Point(12, 12);
@@ -97,10 +109,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 281);
+            this.Controls.Add(this.buttonRemoveFromFavorites);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonAddToFavorites);
-            this.Controls.Add(this.buttonStop); // Adiciona o botão Stop
+            this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.listBoxFavorites);
             this.Controls.Add(this.listBoxRadios);

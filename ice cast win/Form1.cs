@@ -140,6 +140,15 @@ namespace ice_cast_win
             }
         }
 
+        private void buttonRemoveFromFavorites_Click(object sender, EventArgs e)
+        {
+            if (listBoxFavorites.SelectedItem != null)
+            {
+                listBoxFavorites.Items.Remove(listBoxFavorites.SelectedItem);
+                SaveFavorites();
+            }
+        }
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             string searchText = textBoxSearch.Text.ToLower();
